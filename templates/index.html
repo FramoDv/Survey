@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <h1>Gruppo Puccano</h1>
+
+        <p>Welcome to <em>Survey</em>, a very stressful Django website, developed by 4 lazy programmers.</p>
+
+    <h2>Contenuti</h2>
+
+      <ul>
+        <li><strong><a href="{% url 'survey' %}">Surveys:</a> </strong> {{ num_surveys }}</li>
+      </ul>
+
+{% endblock %}
